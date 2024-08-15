@@ -30,7 +30,7 @@ const BudgetCalculatorPage = () => {
                             budget
                         </CardDescription>
                     </CardHeader>
-                    <CardContent className='flex flex-col'>
+                    <CardContent className="flex flex-col">
                         <form>
                             <Input id="income" placeholder="Monthly income" />
                             <br />
@@ -45,7 +45,9 @@ const BudgetCalculatorPage = () => {
                         <Button>Submit</Button>
                     </CardContent>
                     <CardFooter>
-                        <p className='text-secondary ml-auto'>© 2024 ... Inc.</p>
+                        <p className="text-secondary ml-auto">
+                            © 2024 ... Inc.
+                        </p>
                     </CardFooter>
                 </Card>
             </div>
