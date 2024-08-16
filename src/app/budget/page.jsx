@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import {
@@ -42,7 +43,9 @@ const BudgetCalculatorPage = () => {
                             <Input id="debt" placeholder="Debt" />
                             <br />
                         </form>
-                        <Button>Submit</Button>
+                        <Button>
+                            <Link href="/budget/result"> Submit</Link>
+                        </Button>
                     </CardContent>
                     <CardFooter>
                         <p className="text-secondary ml-auto">
