@@ -19,6 +19,10 @@ export default function Navbar() {
                     <Link href="/budget">Budget Calculator</Link>
                 </Button>
 
+                <Button className="mr-2">
+                    <Link href="/wiki/loans">Wiki</Link>
+                </Button>
+
                 <Button className="mr-2">Loans</Button>
                 <Button>Debt</Button>
 

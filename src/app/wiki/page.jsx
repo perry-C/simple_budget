@@ -1,32 +1,23 @@
 'use client';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 
-const WikiPage = ({ children }) => {
-    const financialConceptList = [
-        'loans',
-        'mortgages',
-        'pensions',
-        'savings',
-        'investments',
-    ];
-
+import WikiSidebar from './wikiSideBar';
+const WikiPage = (props) => {
     return (
         <div
             id="wiki-page-container"
-            className="grid grid-cols-5 grid-rows-4"
-            style={{ minHeight: '100vh' }}
+            className="grid grid-cols-6 grid-rows-4"
+            style={{ minHeight: '90vh' }}
         >
-            <ul className="flex flex-col justify-center items-center col-span-1 row-span-4">
-                {financialConceptList.map((val) => (
-                    <Button variant="link" className="text-secondary">
-                        <Link href={`/wiki/${val}`}>{val}</Link>
-                    </Button>
-                ))}
-            </ul>
-            <h1 className="col-span-3 row-span-1 flex justify-center mt-4 text-primary"></h1>
-            <div id="content" className="col-span-3 row-soan-3">
-                {children}
+            <div className="flex flex-col flex-grow items-center col-span-1 row-span-4">
+                <WikiSidebar></WikiSidebar>
+            </div>
+
+            <div
+                id="content"
+                className="col-span-5 row-span-4 flex flex-col justify-start p-2 space-y-2"
+            >
+                {/* <h1 className=" text-primary text-5xl">{props.title}</h1> */}
+                {props.children}
             </div>
         </div>
     );
