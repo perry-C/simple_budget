@@ -19,7 +19,7 @@ const BudgetCalculatorPage = () => {
         <div
             id="budget-page-container"
             className="flex justify-center items-center"
-            style={{ minHeight: '100vh' }}
+            style={{ minHeight: '80vh' }}
         >
             <div id="user-input-form">
                 <Card>

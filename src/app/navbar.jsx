@@ -1,5 +1,7 @@
 'use client';
 import Logo from '@/assets/Logo.svg';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -13,14 +15,14 @@ export default function Navbar() {
                 </div>
             </div>
             <div className="flex gap-2 mr-5 text-md">
-                <div className="mr-2">
+                <Button className="mr-2">
                     <Link href="/budget">Budget Calculator</Link>
-                </div>
+                </Button>
 
-                <div className="mr-2">Loans</div>
-                <div>Debt</div>
-                <div className="ml-5">Search</div>
-                <div className="w-[200px] bg-white"></div>
+                <Button className="mr-2">Loans</Button>
+                <Button>Debt</Button>
+
+                <Input className="w-[200px] ml-2" placeholder="Search"></Input>
             </div>
         </div>
     );
